@@ -3,8 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Josiah Brown Portfolio</title>
+    <!-- CSS Styling -->
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- Font Imports -->
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Hello</h1>
+    <nav class="nav-bar">
+        <div class="nav-logo">
+            <i class="fab fa-twitter fa-lg"></i>
+        </div>
+        <div class="nav-menu">
+            <ul class="nav-menu-list">
+                <li class="nav-menu-item"><a href="#" class="nav-menu-item-link">About</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-item-link">Contact</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-item-link">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="top-section">
+        <div class="intro-text-box">
+            <h1 class="intro-text">Josiah Brown</h1>
+            <br>
+            <h1 class="intro-text">Web Developer</h1>
+        </div>
+        <div class="call-to-action-box">
+            <h1 class="text">Please press here.</h1>
+        </div>
+    </div>
 </body>
 </html>
