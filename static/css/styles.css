@@ -7,6 +7,10 @@
 }
 
 /***** TAG STYLES *****/
+html {
+	scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--blue);
   color: var(--white);
@@ -17,7 +21,6 @@ body {
 h1 {
   margin: 0;
 }
-
 
 /***** NAV BAR *****/
 .topnav {
@@ -71,30 +74,24 @@ h1 {
 
 /***** INTRO & CTA *****/
 
-#top-section {
+#intro-section {
   margin: 20px 0;
   width: 100%;
-}
-
-.intro-text-box {
-  align-items: center;
-  display: flex;
-  height: 200px;
-  justify-content: center;
-  margin: 100px 0 50px;
-  width: 100%;
+  height: 90vh;
+  padding: 0 0 0 150px;
 }
 
 .intro-text {
-  font-size: 5rem;
-  text-align: center;
+  font-size: 5.5rem;
+  line-height: 1.3;
+  margin: 80px auto 50px;
+  text-align: left;
 }
 
-.cta-box {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 180px;
+.intro-text .name {
+    font-size: 2rem;
+    font-family: 'Cutive Mono', monospace;
+    color: var(--green);
 }
 
 .button {
@@ -129,10 +126,20 @@ h1 {
 /***** ABOUT *****/
 #about-section {
     background-color: var(--white);
+    height: 90vh;
+    padding-bottom: 100px;
+
     display: flex;
-    min-height: 500px;
     justify-content: space-evenly;
     align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#about-heading {
+    background-color: var(--blue);
+    font-size: 3rem;
+    flex: 0 0 100%;
+    padding: 30px 0 20px 80px;
 }
 
 .about-item-box {
@@ -140,33 +147,26 @@ h1 {
     flex: 0 1 auto;
     padding-top: 50px;
     padding-bottom: 50px;
-    width: 25%;
+    width: 22%;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: space-evenly;
-}
-
-.vertical-divider {
-    background-color: var(--blue);
-    display: block;
-    height: 100px;
-    right: 100vh;
-    position: absolute;
-    width: 2px;
 }
 
 .about-item-icon {
     margin-top: 25px;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
     width: 35%;
 }
 
 .about-item-title {
+    font-size: 1.8rem;
     font-weight: 800;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: left;
+    width: 100%;
 }
 
 .about-item-text {
@@ -174,13 +174,37 @@ h1 {
     line-height: 1.5;
     margin: 0;
     padding: 0 0px 0;
-    text-align: center;
+    text-align: left;
+    width: 100%;
 }
 
 /***** PROJECTS *****/
-.project-section {
+#projects-section {
     background-color: var(--blue);
-    height: 400px;
+    min-height: 100vh;
+}
+
+#projects-heading {
+    background-color: var(--white);
+    color: var(--blue);
+    font-size: 3rem;
+    flex: 0 0 100%;
+    padding: 30px 0 20px 80px;
+}
+
+
+/***** CONTACT *****/
+#contact-section {
+    background-color: var(--white);
+    height: 80vh;
+}
+
+#contact-heading {
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 3rem;
+    flex: 0 0 100%;
+    padding: 30px 0 20px 80px;
 }
 
 /***** RESPONSIVE STYLING *****/

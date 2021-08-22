@@ -1,45 +1,63 @@
 {% include "header.html" %}
-
-    <div id="top-section">
-        <div class="intro-text-box">
-            <h1 class="intro-text">Josiah Brown.<br>Web Developer.</h1>
-        </div>
-        <div class="cta-box">
+    <div id="view-container">
+        <div id="intro-section">
+            <h1 class="intro-text">
+                <span class="name">Hi. I'm Josiah.</span>
+                <br>
+                <span>Freelance Developer.</span>
+                <br>
+                <span>Ginger Beer Connoisseur.</span>
+            </h1>
             <a href="#" class="button">View Projects -></a>
         </div>
-    </div>
 
-    <div id="about-section">
-        <div class="about-item-box">
-            <img class="about-item-icon" src="{{ url_for('static', filename='images/developer.png') }}">
-            <h1 class="about-item-title">Programmer</h1>
-            <p class="about-item-text">
-                I graduated with a degree in electrical and computer engineering.
-                Then I found web development. The rest is history.
-            </p>
+        <div id="about-section">
+            <h1 id="about-heading"><span>01. </span>About</h1>
+            <div class="about-item-box">
+                <img class="about-item-icon" src="{{ url_for('static', filename='images/developer.png') }}">
+                <h2 class="about-item-title">Programmer</h2>
+                <p class="about-item-text">
+                    I graduated with a degree in electrical and computer engineering.
+                    Then I started programming. The rest is history.
+                    <br><br>
+                    I am a bit of a mutt in terms of web technologies but you aren't interested in that.
+                    I can make you a beautiful website without sounding like a nerd.
+                </p>
+            </div>
+            <div class="about-item-box">
+                <img class="about-item-icon" src="{{ url_for('static', filename='images/volunteer.png') }}">
+                <h2 class="about-item-title">Volunteer</h2>
+                <p class="about-item-text">
+                    I love people and currently volunteer in southeast Asia doing humanitarian relief.
+                    I have no income at the moment and rely on the support of friends back home.
+                    I don't expect this support to last forever.
+                    <br><br>
+                    So I decided to pursue freelance development.
+                </p>
+            </div>
+            <div class="about-item-box">
+                <img class="about-item-icon" src="{{ url_for('static', filename='images/kingdom.png') }}">
+                <h2 class="about-item-title">Jesus is King</h2>
+                <p class="about-item-text">
+                    Jesus is king and He will reign eternally.
+                    I try to do everything in life (yes... even web dev)
+                    with a focus on the kingdom of Jesus.
+                    <br><br>
+                    He also creates some dope stuff.
+                    I seek to do the same in every project I work on.
+                </p>
+            </div>
         </div>
-<!--        <div class="vertical-divider"></div>-->
-        <div class="about-item-box">
-            <img class="about-item-icon" src="{{ url_for('static', filename='images/volunteer.png') }}">
-            <h1 class="about-item-title">Volunteer</h1>
-            <p class="about-item-text">
-                I love people and currently volunteer internationally.
-                I dream of being a freelancer developer so
-                I can continue to help people all over the world.
-            </p>
-        </div>
-        <div class="about-item-box">
-            <img class="about-item-icon" src="{{ url_for('static', filename='images/kingdom.png') }}">
-            <h1 class="about-item-title">Jesus is King</h1>
-            <p class="about-item-text">
-                Jesus is king and He will reign eternally.
-                He also creates some dope stuff. I seek to do the same.
-            </p>
-        </div>
-    </div>
 
-    <div class="project-section">
+        <div id="projects-section">
+            <h1 id="projects-heading">02. Projects</h1>
 
+        </div>
+
+        <div id="contact-section">
+            <h1 id="contact-heading">03. Contact</h1>
+
+        </div>
     </div>
 </body>
 </html>
