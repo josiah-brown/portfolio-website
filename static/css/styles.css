@@ -1,71 +1,213 @@
+/***** GLOBAL VARIABLES *****/
+:root {
+    --blue: #043565; /*blue*/
+    --white: #FFFFFF; /*white*/
+    --gray: #dddddd; /*gray*/
+    --green: #06EFA9; /*green*/
+}
 
 /***** TAG STYLES *****/
 body {
-    background-color: #26363f;
-    color: #e1e1c5;
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
+  background-color: var(--blue);
+  color: var(--white);
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
 }
 
 
-/***** CLASS STYLES *****/
-.nav-bar {
-    font-size: 1.5rem;
-    padding: 20px;
+/***** NAV BAR *****/
+.topnav {
+    background-color: var(--blue);
+    overflow: hidden;
+    padding: 15px 60px 0 40px;
 }
 
-.nav-logo {
-    display: inline;
-    padding: 0 20px;
-}
-
-.nav-menu {
-    display: inline;
+.topnav a {
     float: right;
-
-}
-
-.nav-menu-list {
-    display: inline;
-}
-
-.nav-menu-item {
-    display: inline;
-    padding: 0 20px;
-}
-
-.nav-menu-item-link {
-    color: #e1e1c5;
+    display: block;
+    color: var(--white);
+    text-align: center;
+    padding: 14px 24px;
     text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.topnav .icon {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    display: inline-block;
+    background-image: url("/static/images/logo.png");
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
+.topnav .icon:hover {
+    background-image: url("/static/images/logo-green.png");
+}
+
+.topnav a:first-child {
+    float: left;
+    padding: 0px;
+}
+
+.topnav a:not(:first-child):hover {
+    background-color: var(--green);
+    color: var(--blue);
+}
+
+.topnav a span {
+    color: var(--green);
+}
+
+.topnav a:not(:first-child):hover span{
+    color: var(--blue);
 }
 
 
+/***** INTRO & CTA *****/
 
-.top-section {
-
+#top-section {
+  margin: 20px 0;
+  width: 100%;
 }
 
 .intro-text-box {
-    background-color: #608EA9;
-    display: inline;
-    font-size: 2rem;
-    text-align: left;
+  align-items: center;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  margin: 100px 0 50px;
+  width: 100%;
 }
 
 .intro-text {
-    display: inline;
-    font-family: 'Bitter', serif;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.cta-box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 180px;
+}
+
+.button {
+    /* Basic Button Styles */
+    background-color: var(--green);
+    border: 0px solid #1F1F1F;
+    display: block;
+    height: 76px;
+    width: 25%;
+    min-width: 200px;
+
+    /* Text Styles */
+    color: var(--blue);
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 76px;
+    text-align: center;
+    text-decoration: none;
+
+    /* Fancy Styling */
+    /*background: -webkit-gradient(linear, left bottom, left top, from(#c2c2ba), to(#e1e1c5));
+    background: -o-linear-gradient(bottom, #c2c2ba, #e1e1c5);
+    background: linear-gradient(0deg, #c2c2ba, #e1e1c5);*/
+    border-radius: 48px;
+    text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.button:hover {
+    background: var(--gray);
+}
+
+/***** ABOUT *****/
+#about-section {
+    background-color: var(--white);
+    display: flex;
+    min-height: 500px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.about-item-box {
+    color: var(--blue);
+    flex: 0 1 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.vertical-divider {
+    background-color: var(--blue);
+    display: block;
+    height: 100px;
+    right: 100vh;
+    position: absolute;
+    width: 2px;
+}
+
+.about-item-icon {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    width: 35%;
+}
+
+.about-item-title {
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.about-item-text {
+    font-size: 1.3rem;
+    line-height: 1.5;
     margin: 0;
-
+    padding: 0 0px 0;
+    text-align: center;
 }
 
-.call-to-action-box {
-    display: inline;
-    float: right;
-    text-align: right;
+/***** PROJECTS *****/
+.project-section {
+    background-color: var(--blue);
+    height: 400px;
 }
 
-.text {
-    display: inline;
-    text-align: right;
+/***** RESPONSIVE STYLING *****/
+
+@media screen and (max-width: 1000px) {
+  .intro-text-box {
+    width: 100%;
+  }
+
+  #about-section {
+    padding-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .about-item-box {
+    flex: 0 1 auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
 }
