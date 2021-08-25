@@ -125,7 +125,7 @@ h1 {
 
 /***** ABOUT *****/
 #about-section {
-    background-color: var(--white);
+    background-color: var(--blue);
     height: 90vh;
     padding-bottom: 100px;
 
@@ -136,14 +136,13 @@ h1 {
 }
 
 #about-heading {
-    background-color: var(--blue);
     font-size: 3rem;
     flex: 0 0 100%;
     padding: 30px 0 20px 80px;
 }
 
 .about-item-box {
-    color: var(--blue);
+    color: var(--white);
     flex: 0 1 auto;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -185,17 +184,67 @@ h1 {
 }
 
 #projects-heading {
-    background-color: var(--white);
-    color: var(--blue);
+    color: var(--white);
     font-size: 3rem;
     flex: 0 0 100%;
     padding: 30px 0 20px 80px;
 }
 
+.project-content {
+    width: 100%
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project-item-box {
+    color: var(--white);
+    width: 80%;
+    height: 350px;
+    margin: 50px 0;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.project-item-box .image {
+    width: 40%;
+    background-size: cover;
+}
+
+#chess-project {
+    background-image: url('https://images.unsplash.com/photo-1560174038-da43ac74f01b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hlc3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60')
+}
+
+#generative-art {
+    background-image: url('https://images.unsplash.com/photo-1580584126903-c17d41830450?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGNvZGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60')
+}
+
+.project-info {
+    margin-left: auto;
+    text-align: right;
+    width: 50%;
+}
+
+.project-item-box div h2 {
+    color: var(--green);
+    font-size: 2.5rem;
+    margin: 20px 50px 0 0;
+}
+
+.project-item-box div p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 20px 50px 0 0;
+}
+
 
 /***** CONTACT *****/
 #contact-section {
-    background-color: var(--white);
     height: 80vh;
 }
 
